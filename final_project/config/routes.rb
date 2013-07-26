@@ -2,7 +2,7 @@ FinalProject::Application.routes.draw do
 
   resources :startup
   resources :interns
-  root to: "welcome#index"
+  root :to => "welcome#index"
 
 
 end
