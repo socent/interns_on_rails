@@ -23,12 +23,17 @@
 }
 
 body {
-  background-color: orange;
   font: normal 100% Helvetica, Arial, sans-serif;
 }
 
+#headernav {
+  position: fixed;
+  width: 100%;
+  font-color: white;
+  opacity: .95;
+}
+
 #page {
-  background-color: blue;
   margin: 36px auto;
   width: 90%;
 }

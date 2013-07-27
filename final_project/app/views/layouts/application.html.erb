@@ -7,116 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-      <header id="nav">
-      <div id="mobileBtnLeft" class="menu">
-        <svg version="1.1"
-         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-         x="0px" y="0px" width="5px" height="10px" viewBox="0 0 5 10" overflow="visible" enable-background="new 0 0 5 10"
-         xml:space="preserve">
-          <defs>
-          </defs>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M4.745,10.031L1.857,5.016L4.745,0H2.888L0,5.016l2.888,5.015
-            H4.745z"/>
-        </svg>
-      </div>
-      <div id="mobileBtnObsessions">Obsessions</div>
-        <div id="mobileBtnRight" class="menu">
-          <svg version="1.1"
-           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-           x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15"
-           overflow="visible" xml:space="preserve">
-          <defs>
-          </defs>
-          <rect fill="#FFFFFF" width="15" height="2"/>
-          <rect y="4" fill="#FFFFFF" width="15" height="2"/>
-          <rect y="8" fill="#FFFFFF" width="15" height="2"/>
-          </svg>
-        </div>   
-        <nav id="nav-main">
-          <ul id="nav-primary">
-            <li data-icon="search" class="top-nav-search" id="search-toggle">
-              <a href="#" title="Search">
-                <svg version="1.1"
-                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                     x="0px" y="0px" width="31px" height="49px" viewBox="-7.758 -7.758 31 31"
-                     overflow="visible" enable-background="new -7.758 -7.758 31 31" xml:space="preserve">
-                  <path class="fade-icon" d="M6,1.746c2.345,0,4.252,1.908,4.252,4.254S8.345,10.254,6,10.254c-2.346,0-4.254-1.908-4.254-4.254
-                    S3.655,1.746,6,1.746 M6,0.25C2.824,0.25,0.25,2.824,0.25,6S2.824,11.75,6,11.75c3.174,0,5.748-2.574,5.748-5.75
-                    S9.174,0.25,6,0.25L6,0.25z"/>
-                  <line class="fade-icon-stroke" stroke-width="2.6" x1="9.499" y1="9.5" x2="13.499" y2="13.5"/>
-                </svg>
-              </a>
-              <form id="search-container" class="collapse">
-                <input id="search-field" type="text" name="search-top" placeholder="What are you looking for?"/>
-              </form>
-            </li>
-            <li data-icon="twitter" class="top-nav-twitter">
-              <a href="https://twitter.com/qz" title="Follow Quartz on Twitter" target="_blank">
-              <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="40px" height="49px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-                  <path class="fade-icon" d="M27.146,16.303c0.209,2.468-0.806,4.57-1.144,5.324c-0.338,0.753-1.998,4.077-6.701,5.402
-                    c-4.701,1.324-8.363-1.35-8.363-1.35c3.299,0.414,5.377-1.533,5.377-1.533c-2.805-0.26-3.35-2.571-3.35-2.571
-                    c1.193,0.183,1.506-0.13,1.506-0.13c-3.039-0.908-2.831-3.636-2.831-3.636c1.246,0.597,1.583,0.364,1.583,0.364
-                    c-2.726-2.208-1.064-4.909-1.064-4.909c3.559,4.156,7.609,3.896,7.609,3.896c-0.103-0.901-0.103-3.308,2.288-4.276
-                    c2.396-0.974,4.155,0.882,4.155,0.882c0.959-0.06,2.606-0.949,2.606-0.949c-0.19,1.021-1.891,2.119-1.891,2.119
-                    c0.857-0.061,2.131-0.598,2.131-0.598C28.879,14.84,27.146,16.303,27.146,16.303z"/>
-                </svg>
-              </a>
-            </li>
-            <li data-ico n="facebook" class="top-nav-facebook">
-              <a href="https://facebook.com/quartznews" title="Quartz on Facebook" target="_blank">
-              <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="40px" height="49px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-                    <path class="fade-icon" d="M23.772,17.049H21.14v-1.728c0-0.648,0.429-0.801,0.731-0.801c0.304,0,2.09-0.03,2.09-0.03v-2.756h-2.754
-                      c-2.842,0-3.524,2.052-3.524,3.413v1.901h-1.644v2.938L17.762,20c0,3.77,0,8.266,0,8.266h3.445c0,0,0-4.538,0-8.266l2.265-0.014
-                      L23.772,17.049z"/>
-                  </svg>
-                </a>
-              </li>
-              <li data-icon="menu" class="top-nav-menu" id="nav-secondary-toggle" title="Menu">
-                <a href="#">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px" height="49px" viewBox="0 0 15 15" overflow="visible" xml:space="preserve">
-                    <defs>
-                    </defs>
-                    <rect y="3" class="fade-icon" width="15" height="2"></rect>
-                    <rect y="7" class="fade-icon" width="15" height="2"></rect>
-                    <rect y="11" class="fade-icon" width="15" height="2"></rect>
-                  </svg>
-                </a>
-              </li>
-          </ul>
-          <ul id="nav-secondary">
-          <li class="login-logout is-logged-out hidden"><a href="https://ssl.qz.com">Login</a></li>
-          <li class="register is-logged-out hidden"><a href="https://ssl.qz.com/register">Register</a></li>
-          <li class="login-logout is-logged-in hidden"><a id="headerAjaxLogout" href="#">Log Out</a></li>
-          <li class="settings is-logged-in hidden"><a href="https://ssl.qz.com/settings">Settings</a></li>
-          <li class="brief"><a href="https://ssl.qz.com/register">Daily Brief Signup</a></li>
-          <li class="info"><a href="/about/">About Quartz</a></li>
-        </ul>
-      </nav>
-      <a id="logo" href="/">
-        <svg version="1.1"
-          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-          preserveAspectRatio="xMinYMin meet" 
-           x="0px" y="0px" width="608px" height="100px" viewBox="0 0 608 100" overflow="visible" enable-background="new 0 0 608 100"
-           xml:space="preserve">
-          <rect width="608" height="100"/>
-          <path fill="#FFFFFF" d=""/>
-          <polygon fill="#FFFFFF" points=""/>
-          <path fill="#FFFFFF" d=""/>
-          <polygon fill="#FFFFFF" points=""/>
-          <path fill="#FFFFFF" d=""/>
-          <path fill="#FFFFFF" d=""/>
-        </svg>
-      </a>
-      <div id="offline_mode"></div>
-      <div id="username"></div>
-      <div id="obsessionMobileArrow" class="mobile_hidden"></div>
-    </div>
+
+  <div id="map"></div>
+
+  <header id="headernav" class="nav">
+    <ul class="nav-buttons">
+      <li id="register"><a>Register</a></li>
+      <li id="signup"><a>Sign-up</a></li>
+      <li id="about"><a>About</a></li>
+    </ul>
   </header>
 
   <div id="page">
