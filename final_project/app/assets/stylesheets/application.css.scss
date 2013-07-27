@@ -14,15 +14,21 @@
 
 /* Mobile Portrait */
 @media only screen and (max-width: 479px) {
-  .content { width: 280px; }
+  .content { 
+    width: 280px;
+    margin-left: 25px;
+  }
+
   .content, .content h1 { font-size: 14px; }
 }
 
 body {
+  background-color: orange;
   font: normal 100% Helvetica, Arial, sans-serif;
 }
 
 #page {
+  background-color: blue;
   margin: 36px auto;
   width: 90%;
 }
