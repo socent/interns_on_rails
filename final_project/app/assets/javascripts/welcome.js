@@ -1,12 +1,4 @@
 $(document).ready(function() {
-	 $('#headernav li a').hover(
-	 	function() { $(this).animate( { opacity: 1.0, paddingTop: '35px' }, "fast" ); },
-	 	function() { $(this).animate( { opacity: 1.0, paddingTop: '30px' }, "fast" ); }
-	 );
-	 $('#headerimg img').hover(
-	 	function() { $(this).animate( { opacity: 1.0, marginTop: '5px' }, "fast" ); },
-	 	function() { $(this).animate( { opacity: 0.7, marginTop: '0px' }, "fast" ); }
-	 );
 
 	 return $(window).resize(function() {
 	 	var boxHeight = $("#welcomebox").css;
@@ -15,6 +7,7 @@ $(document).ready(function() {
 	 	 return $(window).height() * 0.3;
 	 	}
 	 });
+
 	if (toggle=true) {
 		$("#next").fadeToggle();
 		$("#next").fadeToggle();
@@ -22,11 +15,11 @@ $(document).ready(function() {
 		$("#next").fadeToggle();
 		$("#next").fadeToggle();
 		$("#next").fadeIn();
-		toggle = false;        
+		var toggle = false;        
 	};
 
 	$("#welcomebox").click(function() {
-  		$("#welcomebox").fadeToggle();
+  		$("#welcomebox").fadeOut();
 	});
 	
 	$("#aboutbox").click(function() {
