@@ -11,3 +11,25 @@
  *= require_self
  *= require_tree .
  */
+ 
+/* Mobile Portrait */
+@media only screen and (max-width: 479px) {
+  .content { width: 280px; }
+  .content h1 { font-size: 14px; }
+}
+
+body {
+  font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+#page {
+  margin: 36px auto;
+  width: 90%;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  margin-left: 14.575%; /* 144px / 988px = 0.14575 */
+  width: 70.85%; /* 700px / 988px = 0.7085 */
+}
