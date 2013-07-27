@@ -1,0 +1,197 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+
+ /* Mobile Portrait */
+/*@media only screen and (max-width: 479px) {
+  .content { 
+    width: 280px;
+    margin-left: 25px;
+  }
+
+  .content, .content h1 { font-size: 14px; }
+}
+
+body {
+  font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+#headernav {
+  position: fixed;
+  width: 100%;
+  font-color: white;
+  opacity: .95;
+}
+
+#page {
+  margin: 36px auto;
+  width: 90%;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  /*margin-left: 14.575%; /* 144px / 988px = 0.14575 */
+  /*width: 70.85%; /* 700px / 988px = 0.7085 */
+/*}*/
+
+/*$$$$$$$$$$$$$$$$Superpage$$$$$$$$$$$$$$$$*/
+
+
+.head-foot-bars {
+
+}
+
+/* End Structure */
+/* Classes */
+/*.clear {
+  clear: both;
+}*/
+/* End Classes */
+
+/* Begin Header */
+#header {
+  position: fixed;
+  padding: 0px;
+  height: 10%;
+  min-height: 40px;
+  width: 100%;
+  max-height: 90px;
+  font-color:white;
+  background-color: #1E1F1F;
+  opacity: .95;
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+
+
+
+
+#headerimg {
+margin-top: 0.3%;
+margin-left: 0.2%;
+height:90%;
+width:18%;
+  
+}
+
+#logo {
+  padding-top: 0%;
+  min-width:5px;
+  min-height: 35px;
+  height:25%;
+  opacity: .95;
+  -moz-transition: margin 1s ease-in-out;
+  -webkit-transition: margin 1s ease-in-out;
+  transition: margin 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#logo:hover {
+  opacity: 1.0;
+  margin-top: '5px'
+}
+
+#headernav {
+  right:0;
+  top:0;
+  position:fixed;
+  width: 50%;
+  min-height: 40px;
+  float: right;
+  text-align: right;
+  height: 100%;
+  max-height:90px;
+  position:relative;
+/*  display:inline-block;*/
+}
+
+#headernav li {
+  float:left;
+}
+
+#headernav li:last-child {
+  margin-right:0;
+}
+
+#headernav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: inline;
+  height: 100%;
+  width:15%;
+}
+
+#headernav ul li {
+  height: 100%;
+  width: 22.33%;
+  float: right;
+}
+
+#headernav li a:after {
+  content:"";
+  display:block;
+  padding:10px 0 0 0;
+  border-top:2px solid white;
+  width:0;
+  transition:all 0.3s;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+}
+
+#headernav li a:hover {
+  color:white;
+}
+
+#headernav li a:hover:after {
+  width:100%;
+  border-top:2px solid white;
+}
+
+.nav-buttons a {
+  box-sizing: border-box;
+  display: inline-block;
+  height:100%;
+  width:100%;
+  text-align: center;
+  padding: 15% 0% 20% 0%;
+  border-right: solid 1px white;
+  font-size: 1.0em;
+  text-decoration: none;
+  color:white;
+  text-decoration:none;
+    color:white;
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+}
+
+@media all and (max-width: 575px) and (min-width: 0px) {
+  .nav-buttons a {
+    font-size: .8em;
+
+  }
+}
+
+.nav-buttons a:hover {
+
+}
+
+
+#sign-in a,
+#sign-in a:hover {
+/*  background-color: #ddd9c9;*/
+  color: white;
+
+}
