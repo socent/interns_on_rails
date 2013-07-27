@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
+
 <head>
-  <title>Entreprenology | Connecting Interns & Startups</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
 </head>
 <body>
-      <header id="nav">
+  <div id="nav">
       <div id="mobileBtnLeft" class="menu">
         <svg version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
@@ -65,7 +63,7 @@
                 </svg>
               </a>
             </li>
-            <li data-ico n="facebook" class="top-nav-facebook">
+            <li data-icon="facebook" class="top-nav-facebook">
               <a href="https://facebook.com/quartznews" title="Quartz on Facebook" target="_blank">
               <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -117,15 +115,6 @@
       <div id="username"></div>
       <div id="obsessionMobileArrow" class="mobile_hidden"></div>
     </div>
-  </header>
-
-  <div id="page">
-
-    <%= yield %>
-
   </div>
-  
-  <footer></footer>
-
 </body>
 </html>
