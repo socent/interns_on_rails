@@ -11,11 +11,11 @@
  *= require_self
  *= require_tree .
  */
- 
+
 /* Mobile Portrait */
 @media only screen and (max-width: 479px) {
   .content { width: 280px; }
-  .content h1 { font-size: 14px; }
+  .content, .content h1 { font-size: 14px; }
 }
 
 body {
