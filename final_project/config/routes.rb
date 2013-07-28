@@ -1,6 +1,7 @@
 FinalProject::Application.routes.draw do
+  get "interns/show"
 
-  resources :startup
+  resources :startups
   resources :interns
   root :to => "welcome#index"
 

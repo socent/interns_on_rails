@@ -86,6 +86,7 @@ $(document).ready(function() {
     // shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 	});
+    var marker = L.marker([51.5, -0.09]).addTo(map);
 // 	var marker = L.marker([43.6481, -79.4042], {icon: blueIcon}).addTo(map).bindPopup("Welcome!");
 // 	L.marker([51.5, -0.09], {icon: blueIcon}).addTo(map).bindPopup("I am a green leaf.");
 // L.marker([51.495, -0.083], {icon: blueIcon}).addTo(map).bindPopup("I am a red leaf.");
@@ -93,4 +94,14 @@ $(document).ready(function() {
 // L.marker([51.5, -0.09]).addTo(map)
 //     .bindPopup('A pretty CSS3 popup. <br> Easily customizable.')
 //     .openPopup();
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
 });

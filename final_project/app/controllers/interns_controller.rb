@@ -1,11 +1,13 @@
-class InternController < ApplicationController
+class InternsController < ApplicationController
   def index
   end
 
   def show
+    @intern = Intern.find(params[:id])
   end
 
   def new
+    @intern = Intern.new
   end
 
   def create
@@ -19,4 +21,5 @@ class InternController < ApplicationController
 
   def destroy
   end
+
 end

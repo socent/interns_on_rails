@@ -14,6 +14,14 @@
 
 /*$$$$$$$$$$$$$$$$Superpage$$$$$$$$$$$$$$$$*/
 
+#map { 
+	height:100%;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+ }
+
 
 html {
 	height: 900px;
@@ -82,13 +90,7 @@ a {
 /* Begin Structure */
 
 
-#map { 
-	height:100%;
-	width:100%;
-	position: absolute;
-	top:0;
-	left:0;
- }
+
 
 
 
@@ -451,7 +453,7 @@ transition: 0.1s all ease-in-out;*/
 }
 
 #welcomebox{
-	/*display: none;*/
+	display: none;
 	position:relative;
 	text-align: center;
 	max-width: 360px;
